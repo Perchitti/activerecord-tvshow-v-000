@@ -13,7 +13,7 @@ Show.minimum(:rating)
 end
 
 def Show::least_popular_show
-
+Show.all.order(rating: :asc).first
 end
 
 def Show::ratings_sum
