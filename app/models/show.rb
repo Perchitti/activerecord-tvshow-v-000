@@ -16,4 +16,7 @@ def Show::least_popular_show
 
 end
 
+def Show::ratings_sum
+  Show.sum(:rating)
+
 end
